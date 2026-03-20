@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Edu | Ôn Thi AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Smart-Edu</h1>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Học tập</a>
+            <a href="#">Công cụ AI</a>
+            <a href="#">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar left-sidebar">
+            <h3>Môn học của tôi</h3>
+            <ul>
+                <li>Triết học Mác-Lênin</li>
+                <li>Tiếng Anh chuyên ngành</li>
+                <li>Pháp luật đại cương</li>
+            </ul>
+        </aside>
+
+        <article class="content-area">
+            <section class="search-section">
+                <input type="text" id="search" placeholder="Tìm kiếm môn học...">
+                <button>Tìm kiếm</button>
+            </section>
+
+            <div class="learning-mode">
+                <h2>Chế độ: Trắc nghiệm</h2>
+                <div class="quiz-box">
+                    <p><strong>Câu 1:</strong> Nội dung câu hỏi từ giáo trình sẽ hiển thị ở đây?</p>
+                    <label><input type="radio" name="quiz"> Đáp án A</label><br>
+                    <label><input type="radio" name="quiz"> Đáp án B</label><br>
+                    <label><input type="radio" name="quiz"> Đáp án C</label><br>
+                    <button class="btn-next">Câu tiếp theo</button>
+                </div>
+            </div>
+
+            <div class="flashcard-section">
+                <h2>Chế độ: Flashcard</h2>
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">Mặt trước: Câu hỏi tự luận?</div>
+                        <div class="flashcard-back">Mặt sau: Đáp án chi tiết từ giáo trình.</div>
+                    </div>
+                </div>
+                <p><small>(Bấm vào thẻ để lật)</small></p>
+            </div>
+        </article>
+
+        <aside class="sidebar right-sidebar">
+            <div class="ai-tool">
+    <h3>AI Assistant</h3>
+    <p>Tải giáo trình & Nhập yêu cầu:</p>
+    
+    <!-- Ô chọn file -->
+    <input type="file" id="fileInput">
+    
+    <!-- Ô nhập yêu cầu văn bản -->
+    <textarea id="aiQuery" placeholder="Ví dụ: Tạo 5 câu trắc nghiệm về chương 1..."></textarea>
+    
+    <button class="btn-ai" onclick="askAI()">Gửi yêu cầu tới AI</button>
+
+    <!-- Khu vực hiển thị phản hồi từ AI -->
+    <div id="aiResponse" class="ai-response-box" style="display:none;">
+        <p><strong>AI phản hồi:</strong></p>
+        <div id="aiText">Đang xử lý...</div>
+    </div>
+</div>
+
+            <div class="leaderboard">
+                <h3>Bảng xếp hạng</h3>
+                <ol>
+                    <li>Nguyễn Văn A - 100đ</li>
+                    <li>Trần Thị B - 95đ</li>
+                </ol>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nhóm Sinh Viên Smart-Edu. Dự án EdTech tích hợp AI.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
